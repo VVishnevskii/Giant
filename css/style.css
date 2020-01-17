@@ -135,6 +135,7 @@ p {
     padding: 118px 0;
 }
 
+
 .features__item {
     display: flex;
     align-items: center;
@@ -158,4 +159,12 @@ p {
 .features__item-text {
     font-weight: 300;
     color: #777777;
+}
+
+
+
+@media (max-width: 991px) {
+    .features__list {
+        margin: 0 5px;
+    }
 }
