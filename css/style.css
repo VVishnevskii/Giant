@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 .main-btn {
     background-color: #ffffff;
     font-size: 14px;
@@ -113,8 +117,45 @@ a {
     margin-bottom: 210px;
 }
 
+@media (max-width: 1199px) {
+    .banner__inner {
+        padding-right: 0;
+    }
+}
+
 @media (max-width: 991px) {
     .banner__img {
         display: none;
     }
+}
+
+
+
+.features {
+    padding: 118px 0;
+}
+
+.features__item {
+    display: flex;
+    align-items: center;
+}
+
+.features__item-icon {
+    width: 75px;
+    height: 75px;
+    margin-right: 18px;
+    border: 1px solid #eeeeee;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.features__item-title {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: #222222;
+}
+
+.features__item-text {
+    font-weight: 300;
+    color: #777777;
 }
