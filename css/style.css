@@ -198,7 +198,7 @@ sup, sub {
           display: block;
           align-self: flex-end;
           padding-top: 5px;
-          padding-right: 25px;
+          padding-right: 30px;
           cursor: pointer;
       }
 
@@ -490,6 +490,12 @@ textarea#newoptions {
     color: #333333;
 }
 
+@media (max-width: 993px) {
+    .prices-block-title {
+        margin-top: -100px;
+    }
+}
+
 .prices__price {
     padding-top: 30px;
     padding-bottom: 95px;
@@ -600,7 +606,7 @@ textarea#newoptions {
 
 .slider-item {
     width: 360px;
-    padding-left: 100px;
+    padding-left: 40px;
     padding-bottom: 45px;
     transition-duration: 0.3s;
     cursor: pointer;
@@ -643,6 +649,8 @@ textarea#newoptions {
     font-size: 18px;
     color: #222222;
 }
+
+
 
 .slider-item__main-position {
     margin-left: 100px;
