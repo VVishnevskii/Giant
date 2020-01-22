@@ -7,6 +7,7 @@
     <title>Giant</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
 </head>
 <body>
     <header class="container-fluid  page-header">
@@ -15,12 +16,17 @@
                 <div class="col-lg  main-logo">
                     <img src="img/main-logo.png" alt="Giant logo">
                 </div>
-                <ul class="col-lg-5  justify-content-between  main-nav__list">
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Feature</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Pricing</a></li>
-                    <li class="main-nav__btn  main-btn">Download Now</li>
-                </ul>
+                <div class="col-lg-6  main-nav__list-inner  main-nav__list-inner-hidden ">
+                    <ul class="justify-content-between  main-nav__list">
+                        <li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
+                        <li class="main-nav__item"><a href="#" class="main-nav__link">Feature</a></li>
+                        <li class="main-nav__item"><a href="#" class="main-nav__link">Pricing</a></li>
+                        <li class="main-nav__item"><a href="#" class="main-nav__link">Download Now</a></li>
+                    </ul>
+                </div>
+                <button class="main-nav__close-btn">
+                    <span></span>
+                </button>
             </nav>
             <section class="row  banner">
                 <div class="col-xl-6  col-lg-7  banner__inner">
@@ -31,7 +37,7 @@
                         <li class="banner__list-item">Fully Responsive and powered by HTML5 and CSS3</li>
                         <li class="banner__list-item">Very easy to customize : set up in minutes</li>
                     </ul>
-                    <button class="banner__btn  main-btn">Start Exploring Us</button>
+                    <button class="banner__btn">Start Exploring Us</button>
                 </div>
                 <div class="col-xl-6  col-lg-5  banner__img">
                     <img src="img/banner-bg.png" alt="">
@@ -40,45 +46,39 @@
         </div>
     </header>
     <main>
-        <section class="container  features">
+        <section class="container  justify-content-center  features">
             <ul class="row  my-n5  features__list">
-                <li class="col-lg-4  col-md-6  py-4  features__item">
-                    <img src="img/features-item-1.png" alt="" class="features__item-icon">
+                <li class="col-lg-4  col-md-6  py-4  features__item  features__item-1">
                     <div class="features__item-inner">
                         <h3 class="features__item-title">Sell any product online</h3>
                         <p class="features__item-text">Over 92% of computers are infected with Adware and spyware. Such software is</p>
                     </div>
                 </li>
-                <li class="col-lg-4  col-md-6  py-4  features__item">
-                    <img src="img/features-item-2.png" alt="" class="features__item-icon">
+                <li class="col-lg-4  col-md-6  py-4  features__item  features__item-2">
                     <div class="features__item-inner">
                         <h3 class="features__item-title">Very easy to customize</h3>
                         <p class="features__item-text">Many of us are so used to working on a computer desktop that when it comes</p>
                     </div>
                 </li>
-                <li class="col-lg-4  col-md-6  py-4  features__item">
-                    <img src="img/features-item-3.png" alt="" class="features__item-icon">
+                <li class="col-lg-4  col-md-6  py-4  features__item  features__item-3">
                     <div class="features__item-inner">
                         <h3 class="features__item-title">Unlimited colors</h3>
                         <p class="features__item-text">Audio player software is used to play back sound recordings in one of the many</p>
                     </div>
                 </li>
-                <li class="col-lg-4  col-md-6  py-4  features__item">
-                    <img src="img/features-item-4.png" alt="" class="features__item-icon">
+                <li class="col-lg-4  col-md-6  py-4  features__item  features__item-4">
                     <div class="features__item-inner">
                         <h3 class="features__item-title">Responsive, HTML5, CSS3</h3>
                         <p class="features__item-text">Computers have become ubiquitous in almost every facet of our lives. At work,</p>
                     </div>
                 </li>
-                <li class="col-lg-4  col-md-6  py-4  features__item">
-                    <img src="img/features-item-5.png" alt="" class="features__item-icon">
+                <li class="col-lg-4  col-md-6  py-4  features__item  features__item-5">
                     <div class="features__item-inner">
                         <h3 class="features__item-title">Designed to convert</h3>
                         <p class="features__item-text">If you are looking for a new way to promote your business that won’t cost</p>
                     </div>
                 </li>
-                <li class="col-lg-4  col-md-6  py-4  features__item">
-                    <img src="img/features-item-6.png" alt="" class="features__item-icon">
+                <li class="col-lg-4  col-md-6  py-4  features__item  features__item-6">
                     <div class="features__item-inner">
                         <h3 class="features__item-title">With no boundaries</h3>
                         <p class="features__item-text">Now, if you are interested in being the best player, getting really good money and </p>
@@ -86,7 +86,207 @@
                 </li>
             </ul>
         </section>
+        <section class="container stranded">
+            <div class="row  justify-content-end">
+                <div class="col-lg-6">
+                    <h2 class="standard-block-title  stranded-title">We don’t leave you stranded</h2>
+                    <p class="standard-block-text  stranded--block-text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+                    <p class="standard-block-text  stranded--block-text  standard-block-text--margin-top">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.</p>
+                    <ul class="stranded__list">
+                        <li class="stranded__item">Unlimited colors: banner with images, slider or video</li>
+                        <li class="stranded__item">Fully Responsive and powered by HTML5 and CSS3</li>
+                        <li class="stranded__item">Very easy to customize : set up in minutes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+       <section class="container  screenshots">
+            <div class="row  justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="standard-block-title">Take a look at our screenshots</h2>
+                    <p class="standard-block-text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+                </div>
+            </div>
+            <div class="row  carousel-slider">
+                <div id="carousel">
+                <a href="#"><img src="img/1.jpg" id="item-1" /></a>
+                <a href="#"><img src="img/2.jpg" id="item-2" /></a>
+                <a href="#"><img src="img/3.jpg" id="item-3" /></a>
+                <a href="#"><img src="img/4.jpg" id="item-4" /></a>
+                <a href="#"><img src="img/5.jpg" id="item-5" /></a>
+                <a href="#"><img src="img/6.jpg" id="item-6" /></a>
+                <a href="#"><img src="img/7.jpg" id="item-7" /></a>
+                </div>
+                <div class="nav-slider">
+                    <a href="#" id="prev" class="prev-slider">&#8592</a> | <a href="#" id="next" class="next-slider">&#8594</a>
+            </div>
+            
+        </section>
+        <section class="container  prices">
+            <div class="row  justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="standard-block-title">We've got the perfect package for you</h2>
+                    <p class="standard-block-text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+                </div>
+            </div>
+            <ul class="row  justify-content-around">
+                <li class="col-lg-3  col-md-6  prices__block">
+                    <h3 class="prices__title">Basic</h3>
+                    <p class="prices__price"><sup>$</sup>12.0<sub>/m</sub></p>
+                    <ul>
+                        <li class="prices__list-item">One User</li>
+                        <li class="prices__list-item">Multiple Access</li>
+                        <li class="prices__list-item">SMS Support</li>
+                        <li class="prices__list-item">24/7 Online Support</li>
+                    </ul>
+                    <a href="#" class="prices__trial">Start Free Trial</a>
+                    <p class="prices__buy-now">Buy Now</p>
+                </li>
+                <li class="col-lg-3  col-md-6  prices__block">
+                    <h3 class="prices__title">Standard</h3>
+                    <p class="prices__price"><sup>$</sup>24.0<sub>/m</sub></p>
+                    <ul>
+                        <li class="prices__list-item">Five User</li>
+                        <li class="prices__list-item">Multiple Access</li>
+                        <li class="prices__list-item">SMS Support</li>
+                        <li class="prices__list-item">24/7 Online Support</li>
+                    </ul>
+                    <a href="#" class="prices__trial">Start Free Trial</a>
+                    <p class="prices__buy-now">Buy Now</p>
+                </li>
+                <li class="col-lg-3  col-md-6  prices__block">
+                    <h3 class="prices__title">Premium</h3>
+                    <p class="prices__price"><sup>$</sup>250.0<sub>/m</sub></p>
+                    <ul>
+                        <li class="prices__list-item">Twenty User</li>
+                        <li class="prices__list-item">Multiple Access</li>
+                        <li class="prices__list-item">SMS Support</li>
+                        <li class="prices__list-item">24/7 Online Support</li>
+                    </ul>
+                    <a href="#" class="prices__trial">Start Free Trial</a>
+                    <p class="prices__buy-now">Buy Now</p>
+                </li>
+                <li class="col-lg-3  col-md-6  prices__block">
+                    <h3 class="prices__title">Enterprise</h3>
+                    <p class="prices__price"><sup>$</sup>999.0<sub>/m</sub></p>
+                    <ul class="prices__list">
+                        <li class="prices__list-item">Unlimited User</li>
+                        <li class="prices__list-item">Multiple Access</li>
+                        <li class="prices__list-item">SMS Support</li>
+                        <li class="prices__list-item">24/7 Online Support</li>
+                    </ul>
+                    <a href="#" class="prices__trial">Start Free Trial</a>
+                    <p class="prices__buy-now">Buy Now</p>
+                </li>
+            </ul>
+        </section>
+        <section class="container-fluid  video">
+            <button class="video__btn">
+                <img src="img/video-btn.png" alt="Play button">
+            </button>   
+        </section>
+        <section class="container  customers">
+            <div class="row  justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="standard-block-title">What our customers are saying</h2>
+                    <p class="standard-block-text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+                </div>
+            </div>
+            <section class="row  regular  slider">
+                <div class="slider-item">
+                  <p class="slider-item__main-text">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
+                  <div class="slider__inner  slider__inner-1">
+                    <p class="slider-item__main-name">Alexandra Bullock</p>
+                    <p class="slider-item__main-position">Apple Inc.</p>
+                  </div>
+                </div>
+                <div class="slider-item">
+                    <p class="slider-item__main-text">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
+                    <div class="slider__inner  slider__inner-2">
+                      <p class="slider-item__main-name">Gary Sebastian</p>
+                      <p class="slider-item__main-position">Apple Inc.</p>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <p class="slider-item__main-text">Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
+                    <div class="slider__inner  slider__inner-3">
+                      <p class="slider-item__main-name">Samantha Bilbau</p>
+                      <p class="slider-item__main-position">Apple Inc.</p>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <p class="slider-item__main-text">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
+                    <div class="slider__inner  slider__inner-1">
+                      <p class="slider-item__main-name">Alexandra Bullock</p>
+                      <p class="slider-item__main-position">Apple Inc.</p>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                      <p class="slider-item__main-text">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
+                      <div class="slider__inner  slider__inner-2">
+                        <p class="slider-item__main-name">Gary Sebastian</p>
+                        <p class="slider-item__main-position">Apple Inc.</p>
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <p class="slider-item__main-text">Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
+                      <div class="slider__inner  slider__inner-3">
+                        <p class="slider-item__main-name">Samantha Bilbau</p>
+                        <p class="slider-item__main-position">Apple Inc.</p>
+                      </div>
+                    </div>  
+              </section>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="container-fluid  download">
+            <div class="container">
+                <div class="row  justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="standard-block-title  standard-block-title--white">Download Giant App Now</h2>
+                    </div>
+                </div>
+                <div class="row  download__list">
+                    <a href="#" class="col-lg  download__btn  download__btn-1">
+                        <p class="download__text">Download</p>
+                        <p class="download__small-text">Download from app store</p>
+                    </a>
+                    <a href="#" class="col-lg  download__btn  download__btn-2">
+                        <p class="download__text">Download</p>
+                        <p class="download__small-text">Download from play store</p>
+                    </a>
+                    <a href="#" class="col-lg  download__btn  download__btn-3">
+                        <p class="download__text">Download</p>
+                        <p class="download__small-text">Download from microsoft store</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid  contacts">
+            <ul class="contacts__social-networks">
+                <li class="contacts__social-network-item"></li>
+                <li class="contacts__social-network-item"></li>
+                <li class="contacts__social-network-item"></li>
+                <li class="contacts__social-network-item"></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+     
+    });
+</script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
