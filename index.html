@@ -18,13 +18,14 @@
                 </div>
                 <div class="col-lg-6  main-nav__list-inner  main-nav__list-inner-hidden ">
                     <ul class="justify-content-between  main-nav__list">
+                        <li class="main-nav__close-btn"><img src="img/Сlose_btn.svg" alt="close menu"></li>
                         <li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
                         <li class="main-nav__item"><a href="#" class="main-nav__link">Feature</a></li>
                         <li class="main-nav__item"><a href="#" class="main-nav__link">Pricing</a></li>
                         <li class="main-nav__item"><a href="#" class="main-nav__link">Download Now</a></li>
                     </ul>
                 </div>
-                <button class="main-nav__close-btn">
+                <button class="main-nav__btn">
                     <span></span>
                 </button>
             </nav>
@@ -273,9 +274,13 @@
     </footer>
 
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+
+    <!-- Слайдер карусель (jquery)  -->
     <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+
+    <!-- Слайдер 3х3 (jquery) -->
     <script type="text/javascript" src="js/slick.js"></script>
-  <script type="text/javascript">
+    <script type="text/javascript">
     $(document).on('ready', function() {
       
       $(".regular").slick({
@@ -286,7 +291,9 @@
       });
      
     });
-</script>
+    </script>
+
+    <!-- Чистый JS -->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
