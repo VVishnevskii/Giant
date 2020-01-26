@@ -83,7 +83,8 @@ sup, sub {
 
 .main-nav__item {
     display: flex;
-    min-width: 120px;
+    width: 160px;
+    
 }
 
 .main-nav__link {
